@@ -250,8 +250,8 @@ int ustc_SubImgMatch_gray(Mat grayImg, Mat subImg, int *x, int *y)
 		}
 	}
 	printf("the vexpoint position is (%d,%d)", match_x, match_y);
-	x = &match_x;
-	y = &match_y;
+	*x = match_x;
+	*y = match_y;
 
 	return 0;
 }
@@ -321,8 +321,8 @@ int ustc_SubImgMatch_bgr(Mat colorImg, Mat subImg, int *x, int *y)
 	}
 
 	printf("the vexpoint position is (%d,%d)", match_x, match_y);
-	x = &match_x;
-	y = &match_y;
+	*x = match_x;
+	*y = match_y;
 	return 0;
 }
 
@@ -388,8 +388,8 @@ int ustc_SubImgMatch_corr(Mat grayImg, Mat subImg, int *x, int *y)
 
 
 	printf("the vexpoint position is (%d,%d)", match_x, match_y);
-	x = &match_x;
-	y = &match_y;
+	*x = match_x;
+	*y = match_y;
 
 	return 0;
 }
@@ -494,8 +494,8 @@ int ustc_SubImgMatch_angle(Mat grayImg, Mat subImg, int *x, int *y)
     
 	
 	printf("the vexpoint position is (%d,%d)", match_x, match_y);
-	x = &match_x;
-	y = &match_y;
+	*x = match_x;
+	*y = match_y;
 	return 0;
 }
 int ustc_SubImgMatch_mag(Mat grayImg, Mat subImg, int *x, int *y)
@@ -582,8 +582,8 @@ int ustc_SubImgMatch_mag(Mat grayImg, Mat subImg, int *x, int *y)
 	}
 
 	printf("the vexpoint position is (%d,%d)", match_x, match_y);
-	x = &match_x;
-	y = &match_y;
+	*x = match_x;
+	*y = match_y;
 	return 0;
 }
 
@@ -650,7 +650,7 @@ int ustc_SubImgMatch_hist(Mat grayImg,Mat subImg,int *x,int *y)
 		}
         
 		printf("the vexpoint position is (%d,%d)", match_x, match_y);
-		x = &match_x;
-		y = &match_y;
+		*x = match_x;
+		*y = match_y;
 		return 0;
 	}
